@@ -1,5 +1,6 @@
-import java.util.List; /// delete?
+package example;
 
+import java.util.List;
 public class Order {
 
     private String firstName;

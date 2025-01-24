@@ -1,3 +1,6 @@
+package courier;
+import example.*;
+
 public class CourierTestData {
 
     public static Courier bodyPost() {

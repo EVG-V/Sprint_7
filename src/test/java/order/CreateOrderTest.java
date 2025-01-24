@@ -1,3 +1,8 @@
+package order;
+
+import courier.CourierSteps;
+import example.Order;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,6 +31,7 @@ public class CreateOrderTest {
     }
 
     @Test
+    @DisplayName("Проверка - создание заказа")
     public void createOrder() {
         Response createOrder = courierSteps.createOrder(order);
         createOrder.then().body("track", notNullValue());
